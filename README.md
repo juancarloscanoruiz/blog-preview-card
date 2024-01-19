@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Frontend Mentor Challenge - Blog Preview Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a solution to the [Blog Preview Card challenge](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). The goal of this challenge was to create a blog preview card using only React and Sass, showcasing proficiency in styling and responsiveness.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the live demo of the project [here](#live-demo-link).
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The Blog Preview Card challenge required building a responsive blog preview card using React for the component structure and Sass for styling.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **React:** The project utilizes React for building the component-based structure.
+- **Sass:** Sass is used for styling to enhance maintainability and readability.
+- **Vite:** The project is bootstrapped with Vite for a quick setup.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Setup and Installation
+
+1. Clone the repository: `git clone https://github.com/juancarloscanoruiz/blog-preview-card.git`
+2. Install dependencies: `pnpm install`
+
+## Usage
+
+1. Run the development server: `pnpm run dev`
+2. Open your browser and visit [http://localhost:5173](http://localhost:5173) to view the blog preview card.
