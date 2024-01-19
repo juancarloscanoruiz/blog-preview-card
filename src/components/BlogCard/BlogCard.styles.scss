@@ -1,0 +1,77 @@
+@use "../../ds/variables.scss";
+
+.blog-card {
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid variables.$black;
+  background-color: variables.$white;
+  box-shadow: 8px 8px 0px 0px rgb(0, 0, 0);
+  max-width: 327px;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 16px 16px 0px 0px rgb(0, 0, 0);
+  }
+
+  &-image {
+    display: block;
+    border-radius: 10px;
+    margin-block-end: 24px;
+    width: 100%;
+  }
+
+  &-label {
+    font-weight: bold;
+    color: variables.$black;
+    padding: 4px 12px;
+    background-color: variables.$yellow;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: variables.$font-sm;
+    margin-block-end: 12px;
+  }
+
+  &-date {
+    font-size: variables.$font-sm;
+    color: variables.$black;
+    margin-block-end: 12px;
+  }
+
+  &-title {
+    font-weight: bold;
+    font-size: variables.$font-lg;
+    color: variables.$black;
+    margin-block-end: 12px;
+    &:hover {
+      cursor: pointer;
+      color: variables.$yellow;
+    }
+  }
+
+  &-description {
+    font-size: variables.$font-md;
+    margin-block-end: 24px;
+    color: variables.$grey;
+  }
+
+  &-author {
+    display: flex;
+    align-items: center;
+    &-avatar {
+      max-width: 32px;
+    }
+    &-name {
+      font-size: variables.$font-sm;
+      font-weight: bold;
+      color: variables.$black;
+      margin-inline-start: 12px;
+    }
+  }
+
+  @media (min-width: variables.$breakpoint-lg) {
+    & {
+      max-width: 384px;
+    }
+  }
+}

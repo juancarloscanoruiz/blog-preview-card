@@ -1,0 +1,22 @@
+@use "ds/variables";
+
+@font-face {
+  font-family: Figtree;
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: FigtreeItalic;
+  src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf");
+}
+
+body {
+  background-color: variables.$yellow;
+  font-family: Figtree;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
